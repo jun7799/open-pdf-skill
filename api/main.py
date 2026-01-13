@@ -63,8 +63,8 @@ async def health():
 
 
 # 导入路由
-from api.merge import router as merge_router
-from api.split import router as split_router
+from merge import router as merge_router
+from split import router as split_router
 
 # 注册路由
 app.include_router(merge_router, prefix="/api", tags=["merge"])
