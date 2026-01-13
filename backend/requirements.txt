@@ -1,11 +1,8 @@
 # PDF Cloud Service Dependencies
 
-# FastAPI 框架
-fastapi>=0.104.0
-uvicorn[standard]>=0.24.0
+# Flask 框架
+Flask>=3.0.0
+flask-cors>=4.0.0
 
 # PDF 处理库
 pypdf>=3.17.0
-
-# 工具库
-python-multipart>=0.0.6
