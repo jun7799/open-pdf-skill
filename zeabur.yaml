@@ -1,14 +1,7 @@
-# Zeabur 部署配置
-
 services:
-  # 后端服务
-  - type: python
+  - type: python:3.11
     name: pdf-backend
-    pythonVersion: "3.11"
-    buildCommand: pip install -r backend/requirements.txt
+    buildCommand: python -m pip install -r backend/requirements.txt
     startCommand: python backend/main.py
     env:
-      - PORT=3000
-    ports:
-      - port: 3000
-        type: http
+      - PORT=8080
