@@ -1,0 +1,14 @@
+name: pdf-backend
+
+services:
+  - name: pdf-backend
+    type: web
+    env: python
+    build_command: cd backend && pip install -r requirements.txt
+    run_command: cd backend && python main.py
+    environment:
+      - name: PORT
+        value: "8080"
+    ports:
+      - port: 8080
+        protocol: http
