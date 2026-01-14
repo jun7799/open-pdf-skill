@@ -27,7 +27,7 @@ def index():
     })
 
 
-@app.route("/health")
+@app.route("/api/health")
 def health():
     """健康检查端点"""
     return jsonify({"status": "healthy"})
