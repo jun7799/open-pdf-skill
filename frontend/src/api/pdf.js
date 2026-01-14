@@ -2,7 +2,8 @@
  * PDF API 调用封装
  */
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
+// 生产环境的 API 地址
+const API_BASE_URL = 'https://bumpy-cordey-wind-change-cb8f2d51.koyeb.app/api';
 
 /**
  * 上传文件并返回进度
